@@ -4,18 +4,39 @@ body {
   min-width: 200px;
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin: 6px 0;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+/* Only the main text (left column) is clickable */
 .main-text {
   flex: 1;
+  cursor: pointer;
   padding-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.row:hover .main-text {
+  background-color: #d0d0d0;
 }
 
 .description {
   color: #888;
   font-size: 0.85em;
-  cursor: default;
-  pointer-events: none;
   white-space: nowrap;
   max-width: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
+  pointer-events: none;
+  cursor: default;
 }
