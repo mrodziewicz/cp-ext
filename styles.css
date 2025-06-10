@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.main-text {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.description {
+  color: #888;
+  font-size: 0.85em;
+  cursor: default;
+  pointer-events: none;
+  white-space: nowrap;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
